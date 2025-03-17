@@ -47,7 +47,7 @@ const CatDetailsDialog: React.FC<CatDetailsDialogProps> = ({
       <DialogTrigger asChild>
         <button className="hidden">Open Dialog</button>
       </DialogTrigger>
-      <DialogContent className="max-w-md w-full overflow-hidden">
+      <DialogContent className="max-w-xl max-h-[90vh] w-full overflow-auto">
         <DialogTitle>{breed.name}</DialogTitle>
         <DialogDescription className="overflow-hidden">
           {/* Image Carousel */}
@@ -114,11 +114,20 @@ const CatDetailsDialog: React.FC<CatDetailsDialogProps> = ({
           </div>
 
           <p>{breed.description}</p>
-
-          <div className="flex flex-wrap gap-2 mt-4">
+          <div className="flex items-center mt-3 gap-2">
+            <span className="text-gray-500">Origin:</span>{" "}
             <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
               {breed.origin}
             </span>
+          </div>
+          <div className="flex items-center mt-3 gap-2">
+            <span className="text-gray-500">life span:</span>{" "}
+            <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">
+              {breed.life_span}
+            </span>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-4">
             {breed.temperament.split(",").map((trait) => (
               <span
                 key={trait}
