@@ -53,11 +53,6 @@ Then open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## 📸 Screenshots
-![Homepage Preview](https://via.placeholder.com/800x400.png?text=Cat+Catalog+Homepage)
-
----
-
 ## 💡 Contributing
 Feel free to fork this repository and submit pull requests! If you find a bug or want a new feature, open an issue. 😊
 
